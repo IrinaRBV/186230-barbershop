@@ -51,63 +51,59 @@
   				<a href="#">Магазин</a>
   			</li>
   			<li>
-  				<a>Средства для ухода</a>
+  				<a href="#">Средства для ухода</a>
   			</li>
   		</ul>	
   	</nav>
   	<!--Фильтры-->
   	<section class="filter">
-  		<div class="filter-top">
-  			<h2 class="filter-top-title">
-  				Производители:
-  			</h2>
-  			<form class="fabricator" action="https://echo.htmlacademy.ru" method="post">
-  				<input id="baxter" type="checkbox" name="mark" checked="checked">
-  				<label for="baxter">
-  					Baxter of california
-  		        </label>
-  		        <input id="natty" type="checkbox" name="mark">
-  		        <label for="natty">
-  			        Mr natty
-  		        </label>
-  		        <input id="suavecito" type="checkbox" name="mark" checked="checked">
-  		        <label for="suavecito">
-  			        Suavecito
-  		        </label>
-  		        <input id="malin" type="checkbox" name="mark">
-  		        <label for="malin">
-  			        Malin-goetz
-  		        </label>
-  		        <input id="murray" type="checkbox" name="mark">
-  		        <label for="murray">
-  			        Murray's
-  		        </label>
-  		        <input id="crew" type="checkbox" name="mark" checked="checked">
-  		        <label for="crew">
-  			        American crew
-  		        </label>
-            </form>
-  		</div>
-  		<div class="filter-bottom">
-  			<h2 class="filter-top-title">
+  		<form class="product-groups" action="https://echo.htmlacademy.ru" method="post">
+        <h2 class="filter-top-title">
+          Производители:
+        </h2>
+  		  <input id="baxter" type="checkbox" name="mark" checked="checked">
+  		  <label for="baxter">
+  			  Baxter of california
+  		  </label>
+  		  <input id="natty" type="checkbox" name="mark">
+  		  <label for="natty">
+  			  Mr natty
+  		  </label>
+  		  <input id="suavecito" type="checkbox" name="mark" checked="checked">
+  		  <label for="suavecito">
+  			  Suavecito
+  		  </label>
+  		  <input id="malin" type="checkbox" name="mark">
+  		  <label for="malin">
+  			  Malin-goetz
+  		  </label>
+  		  <input id="murray" type="checkbox" name="mark">
+  		  <label for="murray">
+  			  Murray's
+        </label>
+  		  <input id="crew" type="checkbox" name="mark" checked="checked">
+  		  <label for="crew">
+  			  American crew
+  		  </label>
+        <h2 class="filter-top-title">
   				Группы товаров:
   			</h2>
-  			<form class="product-groups">
-  				<input id="razor" type="radio" name="tag">
-  				<label for="razor">
-  					Бритвенные принадлежности
-  				</label>
-  				<input id="care" type="radio" name="tag" checked="checked">
-  				<label for="care">
-  					Средства для ухода
-  				</label>
-  				<input id="accessory" type="radio" name="tag">
-  				<label for="accessory">
-  					Аксессуары
-  				</label>
-  			</form>
-  		</div>
-  		<button type="button" class="btn filter-show">Показать</button>
+  		  <input id="razor" type="radio" name="tag">
+  			<label for="razor">
+  				Бритвенные принадлежности
+  			</label>
+  			<input id="care" type="radio" name="tag" checked="checked">
+  			<label for="care">
+  				Средства для ухода
+  			</label>
+  			<input id="accessory" type="radio" name="tag">
+  			<label for="accessory">
+  				Аксессуары
+  			</label>
+  			<button type="submit" class="btn filter-show">
+          Показать
+        </button>
+      </form>
   	</section>
   	<!--Конец фильтра-->
   	<!--<Блоки с товарами-->
