@@ -1,7 +1,6 @@
  body {
 	font-size: 14px;
 	line-height: 24px;
-	color: #000000;
 	font-weight: bold;
 	font-family: PT Sans Narrow, Arial, sans-serif;
 } 
@@ -15,23 +14,18 @@
 .index-content-title {
     font-size: 30px;
 	line-height: 42px;
-	color: #000000;
 }
 
 .breadcrumbs h1 {
 	font-size: 30px;
-	line-height: 42px;
-	color: #000000;	
+	line-height: 42px;	
 } 
 
 h2 {
 	font-size: 24px;
 	line-height: 30px;
-	color: #000000;
 }
 
 h3 {
-	font-size: 14px;
 	line-height: 18px;
-	color: #000000;
 }
