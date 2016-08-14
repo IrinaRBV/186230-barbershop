@@ -29,3 +29,131 @@ h2 {
 h3 {
 	line-height: 18px;
 }
+
+/*Сетка*/
+.main-header {
+	margin-bottom: 60px;
+	/*Только для оформления сетки*/
+	background-color: #FF9933;
+}
+
+.container {
+	width: 940px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: auto;
+	/*Только для оформления сетки*/
+	background-color: green;
+}
+
+.index-logo {
+	width: 368px;
+	height: 204px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 25px;
+}
+
+.main-navigation {
+	width: 780px;
+	float: left;
+	/*Только для оформления сетки*/
+	min-height: 70px;
+	background-color: #FFCC99;
+	
+}
+
+.user-block {
+	width: 140px;
+	float: right;
+	/*Только для оформления сетки*/
+	min-height: 70px;
+	background-color: #FFCC99;
+	
+}
+
+.features {
+	margin-bottom: 80px;
+	/*Только для оформления сетки*/
+	background-color: #99FF99;
+}
+
+.features-item {
+	float: left;
+	width: 300px;
+	margin-right: 20px;
+	/*Только для оформления сетки*/
+	background-color: #66CCCC;
+	min-height: 175px;
+}
+
+.features-item:last-child {
+	margin-right: 0;
+	/*Только для оформления сетки*/
+	background-color: #66CCCC;
+}
+
+.index-content {
+	padding-left: 80px;
+	padding-right: 80px;
+	padding-top: 50px;
+	padding-bottom: 50px; 
+	margin-bottom: 35px; 
+	/*Только для оформления сетки*/
+	background-color: #99FF99;
+}
+
+.index-content-left {
+	float: left;
+	width: 380px;
+	/* Только для оформления сетки */
+    min-height: 330px;
+    background-color: #66CCCC;
+}
+
+.index-content-right {
+	float: right;
+	width: 300px;
+	/* Только для оформления сетки */
+    min-height: 330px;
+    background-color: #66CCCC;
+}
+
+.main-footer {
+	margin-top: 65px;
+	padding-top: 60px;
+    padding-bottom: 40px;
+	/*Только для оформления сетки*/
+	background-color: #FF9933;
+}
+
+.footer-contacts {
+    min-height: 90px;
+    float: left;
+    width: 320px;
+    margin-right: 60px;
+    /*Только для оформления сетки*/
+	background-color: #FFCC99;
+}
+
+.footer-social {
+    min-height: 90px;
+    float: left;
+    width: 180px;
+    /*Только для оформления сетки*/
+	background-color: #FFCC99;
+}
+
+.footer-copyright {
+    min-height: 90px;
+    float: right;
+    width: 180px;
+    /*Только для оформления сетки*/
+	background-color: #FFCC99;
+}
+
+.clearfix::after {
+    display: table;
+	content: "";
+	clear: both;
+} 
