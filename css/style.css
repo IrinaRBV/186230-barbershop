@@ -30,7 +30,7 @@ h3 {
 	line-height: 18px;
 }
 
-/*Сетка*/
+/*Header*/
 .main-header {
 	margin-bottom: 60px;
 	/*Только для оформления сетки*/
@@ -72,6 +72,7 @@ h3 {
 	
 }
 
+/*index*/
 .features {
 	margin-bottom: 80px;
 	/*Только для оформления сетки*/
@@ -119,6 +120,111 @@ h3 {
     background-color: #66CCCC;
 }
 
+/*catalog*/
+.breadcrumbs {
+	float: left;
+	width: 940px;
+	min-height: 70px;
+	margin-bottom: 55px;
+	clear: both;
+	/*Только для оформления сетки*/
+	background-color: #FF6633;
+}
+
+.product-groups {
+	width: 220px;
+	min-height: 575px;
+	float: left;
+	margin-right: 20px;
+	/*Только для оформления сетки*/
+	background-color: #FF6633; 
+}
+
+.product-list {
+	display: inline-block;
+	width: 700px;
+	min-height: 600px;
+	font-size: 0;
+	/*Только для оформления сетки*/
+	background-color: #FF6633;
+}
+
+.product {
+	margin-bottom: 45px;
+}
+
+.list-item {
+	display: inline-block;
+	vertical-align: top;
+	width: 220px;
+	height: 286px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	font-size: 14px;
+	/*Только для оформления сетки*/
+	background-color: #FFCCCC;
+}
+
+.list-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.pages {
+	width: 195px;
+	height: 45px;
+	float: left;
+	font-size: 14px;
+	/*Только для оформления сетки*/
+	background-color: #FFCCCC;
+}
+
+
+/*catalog-item*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
 .main-footer {
 	margin-top: 65px;
 	padding-top: 60px;
