@@ -130,7 +130,6 @@ h3 {
 
 /*catalog*/
 .breadcrumbs {
-	float: left;
 	width: 940px;
 	margin-bottom: 55px;
 	/*Только для оформления сетки*/
@@ -187,7 +186,6 @@ h3 {
 /*catalog-item*/
 .product-photo {
 	width: 460px;
-	height: 680px;
 	display: inline-block;
 	font-size: 0;
 	/*Только для оформления сетки*/
