@@ -57,7 +57,6 @@ h3 {
 .index-logo-mini {
 	float: left;
 	width: 140px;
-	min-height: 23px;
 	/* Только для оформления сетки */
     background-color: #FFCC99;
 }
@@ -133,16 +132,13 @@ h3 {
 .breadcrumbs {
 	float: left;
 	width: 940px;
-	min-height: 70px;
 	margin-bottom: 55px;
-	clear: both;
 	/*Только для оформления сетки*/
 	background-color: #FFCC99;
 }
 
 .product-groups {
 	width: 220px;
-	min-height: 575px;
 	float: left;
 	margin-right: 20px;
 	/*Только для оформления сетки*/
@@ -150,10 +146,10 @@ h3 {
 }
 
 .product-list {
-	display: inline-block;
+	float: right;
 	width: 700px;
-	min-height: 600px;
 	font-size: 0;
+	margin-bottom: 20px;
 	/*Только для оформления сетки*/
 	background-color: #FF6633;
 }
@@ -175,31 +171,33 @@ h3 {
 }
 
 .list-item:nth-child(3n) {
-  margin-right: 0;
+    margin-right: 0;
 }
 
 .pages {
-	width: 195px;
-	height: 45px;
-	float: left;
 	font-size: 14px;
 	/*Только для оформления сетки*/
 	background-color: #FFCCCC;
 }
 
+.pages-number {
+	padding: 5px;
+}
 
 /*catalog-item*/
 .product-photo {
 	width: 460px;
-	min-height: 668px;
+	height: 680px;
 	display: inline-block;
 	font-size: 0;
 	/*Только для оформления сетки*/
 	background-color: #FFCCCC;
 }
 
+.big-photo 	{
+	margin-bottom: 20px;
+}
 .mini-photo {
-	margin-top: 20px;
 	margin-right: 20px;
 	font-size: 14px;
 }
@@ -211,7 +209,6 @@ h3 {
 .kit-description {
 	float: right;
 	width: 400px;
-	min-height: 200px;
 	/*Только для оформления сетки*/
 	background-color: #FFCCCC;
 }
