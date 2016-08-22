@@ -1,9 +1,22 @@
  body {
+ 	min-width: 960px;
 	font-size: 14px;
 	line-height: 24px;
-	font-weight: bold;
+	font-weight: 700;
 	font-family: PT Sans Narrow, Arial, sans-serif;
+	color: #ffffff;
+	text-transform: uppercase;
+	background: #000000 url(../img/background.jpg) no-repeat center top;
+
 } 
+
+
+/*Фон для каталога*/
+
+.content {
+    color: #000000;
+    background: #f8f5f2 url(../img/background-catalog.png) no-repeat center top;
+}
 
 .features-name {
 	font-size: 30px;
@@ -30,11 +43,17 @@ h3 {
 	line-height: 18px;
 }
 
+.clearfix::after {
+    display: table;
+	content: "";
+	clear: both;
+} 
+
 /*Header*/
 .main-header {
 	margin-bottom: 60px;
-	/*Только для оформления сетки*/
-	background-color: #FFCC66;
+	color: #ffffff;
+	background-color: #000000;	
 }
 
 .container {
@@ -42,10 +61,77 @@ h3 {
 	padding-left: 10px;
 	padding-right: 10px;
 	margin: auto;
-	/*Только для оформления сетки*/
-	background-color: #FF9900;
+
 }
 
+.index-logo-mini {
+	float: left;
+	width: 140px;
+	
+}
+
+.main-navigation {
+	width: 630px;
+	float: left;
+	margin-left: 10px;
+	font-size: 0;
+} 
+
+.main-navigation a {
+	display: inline-block;
+	vertical-align: top;
+	padding: 25px 20px;
+	font-size: 16px;
+	line-height: 20px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.main-navigation a:hover {
+	background: #242424;
+}
+
+.label {
+	border-bottom: 5px solid #ffffff;
+}
+
+.user-block {
+	max-width: 140px;
+	float: right;	
+}
+
+.login {
+	position: relative;
+	display: inline-block;
+	padding: 25px 20px;
+	padding-left: 50px;
+	font-size: 16px;
+	line-height: 20px;
+	vertical-align: top;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.login:hover {
+	background-color: #242424;
+}
+
+.login::before{
+	content: "";
+    position: absolute;
+    top: 28px;
+    left: 20px;
+	width: 18px;
+	height: 18px;
+	background: transparent url(../img/icon/sprait.png) no-repeat;
+	background-position: -10px -126px;
+	opacity: 0.3;
+}
+
+.login:hover::before {
+	opacity: 1;
+}
+/*index*/
 .index-logo {
 	width: 368px;
 	height: 204px;
@@ -54,52 +140,52 @@ h3 {
 	margin-bottom: 25px;
 }
 
-.index-logo-mini {
-	float: left;
-	width: 140px;
-	/* Только для оформления сетки */
-    background-color: #FFCC99;
+.index-logo img {
+	width: 368px;
+	height: 204px;
 }
 
-.main-navigation {
-	width: 630px;
-	float: left;
-	margin-left: 10px;
-	/*Только для оформления сетки*/
-	min-height: 70px;
-	background-color: #FFCC99;
-	
-}
-
-.user-block {
-	width: 140px;
-	float: right;
-	/*Только для оформления сетки*/
-	min-height: 70px;
-	background-color: #FFCC99;
-	
-}
-
-/*index*/
 .features {
 	margin-bottom: 80px;
-	/*Только для оформления сетки*/
-	background-color: #FFCCCC;
+	
 }
 
 .features-item {
 	float: left;
 	width: 300px;
 	margin-right: 20px;
-	/*Только для оформления сетки*/
-	background-color: #99CCFF;
-	min-height: 175px;
+	text-align: center;
 }
 
 .features-item:last-child {
-	margin-right: 0;
-	/*Только для оформления сетки*/
-	background-color: #99CCFF;
+	margin-right: 0;	
+}
+
+.features-name {
+    position: relative;
+	display: block;
+    margin-bottom: 30px;
+    padding-bottom: 35px;
+	font-size: 30px;
+	line-height: 42px;
+}
+
+.features-item p {
+	margin: 10px;
+	margin-bottom: 0;
+}
+
+.features-name::after {
+	content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+	display: block;
+	width: 20px;
+	height: 20px;
+    margin-left: -10px;
+	background-color: #ffffff;
+	transform: rotate(45deg);
 }
 
 .index-content {
@@ -108,49 +194,293 @@ h3 {
 	padding-top: 50px;
 	padding-bottom: 50px; 
 	margin-bottom: 35px; 
-	/*Только для оформления сетки*/
-	background-color: #FFCCCC;
+	color: #000000;
+	background: url(../img/shade-line.png) no-repeat center,
+	#f8f5f2 url(../img/background-2.png);
 }
 
 .index-content-left {
 	float: left;
 	width: 380px;
-	/* Только для оформления сетки */
-    min-height: 330px;
-    background-color: #99CCFF;
+	
 }
 
 .index-content-right {
 	float: right;
 	width: 300px;
-	/* Только для оформления сетки */
-    min-height: 330px;
-    background-color: #99CCFF;
+	
+}
+
+.index-content-title {
+	margin: 0;
+	margin-bottom: 25px;
+	font-size: 30px;
+	line-height: 42px;
+}
+
+.index-content p {
+	margin: 0;
+	margin-bottom: 25px;
+}
+
+.news-preview {
+	margin: 0;
+	padding: 0;
+	padding-right: 35px;
+	list-style: none;
+}
+
+.news-preview li {
+	margin-bottom: 25px;
+}
+
+.news-preview p {
+	margin-bottom: 0;
+}
+
+.news-preview time {
+	text-transform: none;
+}
+
+.btn {
+    display: inline-block;
+    margin-right: 16px;
+    padding: 10px 33px;
+    font: inherit;
+    vertical-align: top;
+    text-align: center;
+    color: #ffffff;
+    background-color: #000000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #663d15;
+}
+
+.btn.disabled,
+.btn:disabled {
+    cursor: default;
+    opacity: 0.5;
+}
+
+.btn.disabled:hover,
+.btn:disabled:hover {
+    background-color: #000000;
+}
+
+.gallery {
+    position: relative;
+
+    height: 260px;
+}
+
+.gallery-content {
+    height: 164px;
+    margin: 0;
+}
+
+.gallery-content img {
+    width: 286px;
+    height: 164px;
+}
+
+.gallery .btn {
+    position: absolute;
+    bottom: 0; 
+    width: 140px;
+    margin: 0;
+}
+
+.gallery-prev {
+    left: 0;
+}
+
+.gallery-next {
+    right: 0;
+}
+
+.appointment-form input {
+    float: left;
+    width: 106px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 7px 15px;
+    font: inherit;
+    color: inherit;
+    text-transform: inherit;
+    background-color: #f9f6f3;
+    border: 2px solid #000000;
+    outline: none;
+}
+
+.appointment-form input:focus {
+    border: 2px solid #663d15;
+}
+
+.appointment-form input:nth-child(2n) {
+    margin-right: 0;
+}
+
+.appointment-form .btn {
+    clear: both;
+    width: 100%;
 }
 
 /*catalog*/
+
+.index-logo-mini {
+	display: inline-block;
+	width: 140px;
+    vertical-align: top;
+    padding: 25px 20px;
+}
+
+.index-logo-mini img {
+	width: 111px; 
+	height: 24px;
+}
+
 .breadcrumbs {
 	width: 940px;
 	margin-bottom: 55px;
-	/*Только для оформления сетки*/
-	background-color: #FFCC99;
+}
+
+.breadcrumbs-item {
+	position: relative;
+	margin-right: 20px;
+	padding-right: 20px;
+	text-decoration: none;
+	color: #000000;
+}
+
+.breadcrumbs-item.disabled,
+.breadcrumbs-item:disabled {
+    cursor: default;
+    color: #aba9a7;
+}
+
+.breadcrumbs-item::after {
+	content: "";
+    position: absolute;
+    right: -10%;
+    top: 4px;
+	display: block;
+	width: 10px;
+	height: 10px;
+	background-color: #000000;
+	transform: rotate(45deg);
+}
+
+.breadcrumbs-item:nth-child(3)::after {
+	margin-right: 7px;
+}
+
+.breadcrumbs-item:last-child::after {
+	background: none;
 }
 
 .product-groups {
 	width: 220px;
 	float: left;
 	margin-right: 20px;
-	/*Только для оформления сетки*/
-	background-color: #FF6633; 
 }
+
+.filter-top-title {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+.product-groups ul {
+	list-style: none;
+	padding: 0;
+}
+
+input[type="checkbox"] {
+	display: none;
+}
+
+input[type="checkbox"] + label{
+	position: relative;
+	display: block;
+	margin: 17px 0;
+	padding-left: 23px;
+	line-height: 18px;
+    cursor: pointer;
+}
+
+input[type="checkbox"] + label::before {
+	position: absolute;
+    content: ""; 
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #000000;
+    background-color: #f9f6f3;
+}
+
+input[type="checkbox"]:checked + label::after {
+	position: absolute;
+	content: "";
+	width: 12px;
+    height: 12px;
+    left: 3.5px;
+    top: 4px;
+    background-image: url(../img/icon/sprait.png); 
+    background-position: -10px -10px; 
+} 
+
+input[type="radio"] {
+	display: none;
+}
+
+input[type="radio"] + label {
+    position: relative;
+    display: block;
+    margin: 17px 0;
+    line-height: 18px;
+    padding-left: 23px;
+    cursor: pointer;
+}
+
+input[type="radio"] + label::before {
+	position: absolute;
+    content: ""; 
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    background-color: #f9f6f3;
+}
+
+input[type="radio"]:checked + label::after {
+	position: absolute;
+	content: "";
+	width: 8px;
+    height: 8px;
+    left: 5.5px;
+    top: 5.5px;
+    background-color: #000000;
+    border-radius: 10px;
+}
+
+.product-groups label:hover {
+    color: #663d15;
+}
+
 
 .product-list {
 	float: right;
 	width: 700px;
 	font-size: 0;
 	margin-bottom: 20px;
-	/*Только для оформления сетки*/
-	background-color: #FF6633;
 }
 
 .product {
@@ -165,22 +495,80 @@ h3 {
 	margin-bottom: 20px;
 	margin-right: 20px;
 	font-size: 14px;
-	/*Только для оформления сетки*/
-	background-color: #FFCCCC;
+	background: #ffffff;
+}
+
+.list-item h3 {
+	padding-left: 15px;
+}
+
+.list-item a {
+	text-decoration: none;
+	color: #000000;
+	text-align: left;
+}
+
+.price-container {
+	vertical-align: top;
+	padding-left: 15px;
+}
+
+.price {
+	position: relative;
+	padding: 15px 30px;
+	background-color: #e5e5e5;
+}
+
+.btn-price {
+    position: absolute;
+    font: inherit;
+    margin-top: -12px;
+    width: 78px;
+    padding: 12px;
+    color: #ffffff;
+    background-color: #000000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-price:hover,
+.btn-price:active {
+    background-color: #663d15;
 }
 
 .list-item:nth-child(3n) {
     margin-right: 0;
 }
 
+.list-item img {
+	width: 220px;
+	height: 165px;
+}
+
 .pages {
 	font-size: 14px;
-	/*Только для оформления сетки*/
-	background-color: #FFCCCC;
+	
 }
 
 .pages-number {
-	padding: 5px;
+    padding: 14px 16px;
+    margin-right: 7px;
+    color: #ffffff;
+    text-decoration: none;
+    background: #000000;
+}
+
+.pages-number:hover,
+.pages-number:active {
+	background-color: #663d15;
+}
+
+.pages-number.disabled,
+.pages-number:disabled {
+   cursor: default;
+   color: #000000;
+   background: #ffffff;
 }
 
 /*catalog-item*/
@@ -188,8 +576,6 @@ h3 {
 	width: 460px;
 	display: inline-block;
 	font-size: 0;
-	/*Только для оформления сетки*/
-	background-color: #FFCCCC;
 }
 
 .big-photo 	{
@@ -206,20 +592,79 @@ h3 {
 
 .kit-description {
 	float: right;
-	width: 400px;
-	/*Только для оформления сетки*/
-	background-color: #FFCCCC;
+	width: 400px;	
 }
 
 .short-description {
 	margin-bottom: 65px;
-	/*Только для оформления сетки*/
-	background-color: #99CCFF;
+	margin-left: 10px;
+}
+
+.description {
+	position: relative;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.article {
+	position: absolute;
+	right: 0;
+    color: #aeaeae;
+}
+ 	
+.text {
+	margin: 30px 0;
+}
+
+.text a {
+	color: #000000;
+}
+
+.kit-price .btn {
+    position: absolute;
+    font: inherit;
+    margin-top: -12px;
+    width: 78px;
+    padding: 12px;
+    color: #ffffff;
+    background-color: #000000;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
 
 .kit-contents {
-	/*Только для оформления сетки*/
-	background-color: #99CCFF;
+	margin-left: 10px;
+}
+
+.kit-contents h2 {
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.kit-contents ul {
+	padding: 0;
+	list-style: none;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.kit-contents li {
+	position: relative;
+	padding-left: 20px;
+	padding-bottom: 10px;
+}
+
+.kit-contents li:before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 0;
+    display: block;
+    width: 8px;
+    height: 8px;
+    background: #000000;
+    transform: rotate(45deg);
 }
 
 /*footer*/
@@ -227,8 +672,9 @@ h3 {
 	margin-top: 65px;
 	padding-top: 60px;
     padding-bottom: 40px;
-	/*Только для оформления сетки*/
-	background-color: #FFCC66;
+    color: #ffffff; 
+    background: #252525 url(../img/pattern-black.jpg);
+	
 }
 
 .footer-contacts {
@@ -236,28 +682,151 @@ h3 {
     float: left;
     width: 320px;
     margin-right: 60px;
-    /*Только для оформления сетки*/
-	background-color: #FFCC99;
+   
+}
+
+.footer-contacts a {
+	color: #ffffff;
+}
+
+.footer-contacts a:hover {
+	text-decoration: none;
 }
 
 .footer-social {
-    min-height: 90px;
     float: left;
     width: 180px;
-    /*Только для оформления сетки*/
-	background-color: #FFCC99;
+    text-align: center;
+}
+
+.footer-social p {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.social-btn {
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    margin: 0 2px;
+    font-size: 0;
+    vertical-align: top;
+    text-decoration: none;
+    background: #000000 url(../img/icon/sprait.png) no-repeat center;
+}
+
+.social-btn:hover {
+    background-color: #ffffff;
+}
+
+.social-btn-vk {
+    background-position: -2px -303px;
+}
+
+.social-btn-fb {
+    background-position: 4px -33px;
+}
+
+.social-btn-inst {
+    background-position: 1px -152px;
+}
+
+.social-btn-vk:hover {
+    background-position: -2px -340px;
+}
+
+.social-btn-fb:hover {
+    background-position: 4px -75px;
+}
+
+.social-btn-inst:hover {
+    background-position: 1px -193px;
 }
 
 .footer-copyright {
-    min-height: 90px;
     float: right;
-    width: 180px;
-    /*Только для оформления сетки*/
-	background-color: #FFCC99;
+    max-width: 180px;
+    
 }
 
-.clearfix::after {
-    display: table;
-	content: "";
-	clear: both;
-} 
+.footer-copyright p {
+    margin: 0;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.footer-copyright .btn {
+    margin-right: 0;
+}
+
+.footer-copyright .btn:hover {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+/*.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-cross {
+    width: 12px;
+    height: 12px;
+    background-position: -10px -10px;
+}
+
+.sprite-fb {
+    width: 12px;
+    height: 22px;
+    background-position: -10px -42px;
+}
+
+.sprite-fb-black {
+    width: 12px;
+    height: 22px;
+    background-position: -10px -84px;
+}
+
+.sprite-icon-login {
+    width: 18px;
+    height: 16px;
+    background-position: -10px -126px;
+}
+
+.sprite-inst {
+    width: 21px;
+    height: 21px;
+    background-position: -10px -162px;
+}
+
+.sprite-inst--black {
+    width: 21px;
+    height: 21px;
+    background-position: -10px -203px;
+}
+
+.sprite-user-form1 {
+    width: 15px;
+    height: 15px;
+    background-position: -10px -244px;
+}
+
+.sprite-user-form2 {
+    width: 15px;
+    height: 17px;
+    background-position: -10px -279px;
+}
+
+.sprite-vk {
+    width: 25px;
+    height: 16px;
+    background-position: -10px -316px;
+}
+
+.sprite-vk-black {
+    width: 25px;
+    height: 16px;
+    background-position: -10px -352px;
+}
+*/
