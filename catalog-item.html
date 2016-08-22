@@ -3,15 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Набор для путешествий Baxter of california</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
+<body class="content">
 	
 	<!--Шапка страницы-->
 	<header class="main-header">
   	<div class="container clearfix">
         <div class="index-logo-mini">
-        <a href="#">
+        <a href="index.html">
           <img src="img/logo-small.png" width="111" height="24" alt="Барбершоп «Бородинский»">
         </a>
         </div>
@@ -20,7 +22,7 @@
   		    		<a class="navigation-item" href="#">Информация</a>
   		    		<a class="navigation-item" href="#">Новости</a>
   		    		<a class="navigation-item" href="#">Прайс-лист</a>
-  		    		<a class="navigation-item" href="#">Магазин</a>
+  		    		<a class="navigation-item label" href="catalog.html">Магазин</a>
   		    		<a class="navigation-item" href="#">Контакты</a>
           </div>
   		</nav>
@@ -34,12 +36,10 @@
   <main class="container">
     <h1 class="title">Набор для путешествий «Baxter of california»</h1>
   	<nav class="breadcrumbs">
-  		<div class="navigation">
-  				<a class="navigation-item" href="#">Главная</a>
-  				<a class="navigation-item" href="#">Магазин</a>
-  				<a class="navigation-item" href="#">Средства для ухода</a>
-  				<a class="navigation-item" href="#">Набор для путешествий «Baxter of california»</a>
-      </div>	
+  				<a class="breadcrumbs-item" href="#">Главная</a>
+  				<a class="breadcrumbs-item" href="#">Магазин</a>
+  				<a class="breadcrumbs-item" href="#">Средства для ухода</a>
+  				<a class="breadcrumbs-item disabled" href="#">Набор для путешествий «Baxter of california»</a>	
   	</nav>
   	<section class="product-information">
   		<div class="product-photo">
@@ -50,24 +50,16 @@
   		</div>
   		<div class="kit-description">
   			<div class="short-description clearfix">
-  				<div class="short-description-1">
-  					<b>
-  					    Есть в наличии
-  				    </b>
-  				    <p>
-  					    Артикул: Dexter-ae
-  				    </p>
-  				</div>
-  				<div class="short-description-2">
-  					<p>
-  						Travel kit-необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.
+  				<p class="description">
+  					<span class="availability">Есть в наличии</span>
+            <span class="article">Артикул: Dexter-ae</span>
+          </p>
+  					<p class="text">
+  						Travel kit - <a href="#">необходимый аксессуар</a> во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.
   					</p>
-  				</div>
   				<div class="kit-price">
-  					<p>
-  					    3 900 руб.
+  					<span class="price">3 900 руб.</span>
   				        <button class="btn" type="button">Купить</button>
-  				    </p>
   				</div>
   			</div>
   			<div class="kit-contents clearfix">
