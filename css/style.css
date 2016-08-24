@@ -36,7 +36,7 @@
 
 h2 {
 	font-size: 24px;
-	line-height: 30px;
+	line-height: 27px;
 }
 
 h3 {
@@ -51,7 +51,7 @@ h3 {
 
 /*Header*/
 .main-header {
-	margin-bottom: 60px;
+	margin-bottom: 58px;
 	color: #ffffff;
 	background-color: #000000;	
 }
@@ -66,33 +66,43 @@ h3 {
 
 .index-logo-mini {
 	float: left;
-	width: 140px;
+	width: 100px;
 	
 }
 
 .main-navigation {
-	width: 630px;
 	float: left;
-	margin-left: 10px;
+	width: 620px;
 	font-size: 0;
-} 
+}
 
-.main-navigation a {
+.main-navigation li{
 	display: inline-block;
-	vertical-align: top;
-	padding: 25px 20px;
+	vertical-align: middle;
+	padding-top: 2px;
 	font-size: 16px;
+	line-height: 20px;
+
+}
+
+.navigation {
+	padding: 25px 20px;
+}
+
+.navigation-item {
+	font-size: 16px;
+	padding-bottom: 23px;
 	line-height: 20px;
 	color: #ffffff;
 	text-decoration: none;
 }
 
-.main-navigation a:hover {
+.main-navigation .navigation:hover {
 	background: #242424;
 }
 
-.label {
-	border-bottom: 5px solid #ffffff;
+.item-shop {
+	border-bottom: 4px solid #ffffff;
 }
 
 .user-block {
@@ -103,7 +113,7 @@ h3 {
 .login {
 	position: relative;
 	display: inline-block;
-	padding: 25px 20px;
+	padding: 27px 20px;
 	padding-left: 50px;
 	font-size: 16px;
 	line-height: 20px;
@@ -245,10 +255,12 @@ h3 {
 .btn {
     display: inline-block;
     margin-right: 16px;
-    padding: 10px 33px;
+    margin-top: 31px;
+    padding: 9px 29px;
     font: inherit;
     vertical-align: top;
     text-align: center;
+    text-transform: inherit;
     color: #ffffff;
     background-color: #000000;
     border: none;
@@ -334,9 +346,10 @@ h3 {
 
 .index-logo-mini {
 	display: inline-block;
-	width: 140px;
+	width: 70px;
     vertical-align: top;
-    padding: 25px 20px;
+    padding: 18px 20px;
+    padding-top: 24px;
 }
 
 .index-logo-mini img {
@@ -346,13 +359,14 @@ h3 {
 
 .breadcrumbs {
 	width: 940px;
-	margin-bottom: 55px;
+	margin-bottom: 48px;
+    padding-top: 1px;
 }
 
 .breadcrumbs-item {
 	position: relative;
-	margin-right: 20px;
-	padding-right: 20px;
+	margin-right: 21px;
+	padding-right: 15px;
 	text-decoration: none;
 	color: #000000;
 }
@@ -361,16 +375,25 @@ h3 {
 .breadcrumbs-item:disabled {
     cursor: default;
     color: #aba9a7;
+   
+}
+
+.rhomb {
+    padding-right: 23px;
+}
+
+.rhombs {
+    padding-right: 23px;
 }
 
 .breadcrumbs-item::after {
 	content: "";
     position: absolute;
-    right: -10%;
+    left: 63px;
     top: 4px;
 	display: block;
-	width: 10px;
-	height: 10px;
+	width: 8px;
+	height: 8px;
 	background-color: #000000;
 	transform: rotate(45deg);
 }
@@ -383,15 +406,33 @@ h3 {
 	background: none;
 }
 
+
+.rhomb:after {
+   left: 69px; 
+}
+
+.rhombs:after {
+   left: 138px; 
+} 
+
 .product-groups {
 	width: 220px;
 	float: left;
 	margin-right: 20px;
 }
 
-.filter-top-title {
+.filter-top-title1 {
 	display: inline-block;
 	margin: 0;
+	margin-bottom: 13px;
+	padding: 0;
+}
+
+.filter-top-title2 {
+	display: inline-block;
+	margin: 0;
+	margin-top: 34px;
+	margin-bottom: 9px;
 	padding: 0;
 }
 
@@ -407,9 +448,9 @@ input[type="checkbox"] {
 input[type="checkbox"] + label{
 	position: relative;
 	display: block;
-	margin: 17px 0;
-	padding-left: 23px;
-	line-height: 18px;
+	margin: 18px 0;
+	padding-left: 43px;
+	line-height: 19px;
     cursor: pointer;
 }
 
@@ -429,7 +470,7 @@ input[type="checkbox"]:checked + label::after {
 	content: "";
 	width: 12px;
     height: 12px;
-    left: 3.5px;
+    left: 4px;
     top: 4px;
     background-image: url(../img/icon/sprait.png); 
     background-position: -10px -10px; 
@@ -442,9 +483,9 @@ input[type="radio"] {
 input[type="radio"] + label {
     position: relative;
     display: block;
-    margin: 17px 0;
+    margin: 20px 0;
     line-height: 18px;
-    padding-left: 23px;
+    padding-left: 44px;
     cursor: pointer;
 }
 
@@ -465,41 +506,75 @@ input[type="radio"]:checked + label::after {
 	content: "";
 	width: 8px;
     height: 8px;
-    left: 5.5px;
-    top: 5.5px;
+    left: 6px;
+    top: 6px;
     background-color: #000000;
     border-radius: 10px;
 }
 
-.product-groups label:hover {
-    color: #663d15;
+.filter-show {
+    display: inline-block;
+    margin-right: 16px;
+    margin-top: 31px;
+    padding-bottom: 10px;
+    padding-top: 9px;
+    padding-left: 33px;
+    padding-right: 28px;
+    font: inherit;
+    font-size: 13px;
+    vertical-align: top;
+    text-align: center;
+    text-transform: inherit;
+    color: #ffffff;
+    background-color: #000000;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
 
+.product-groups li:hover {
+    color: #663d15;
+}
 
 .product-list {
 	float: right;
 	width: 700px;
 	font-size: 0;
-	margin-bottom: 20px;
+	margin-bottom: 19px;
 }
 
 .product {
-	margin-bottom: 45px;
+	margin-bottom: 44px;
 }
 
 .list-item {
 	display: inline-block;
-	vertical-align: top;
-	width: 220px;
-	height: 286px;
-	margin-bottom: 20px;
-	margin-right: 20px;
-	font-size: 14px;
-	background: #ffffff;
+    vertical-align: top;
+    width: 220px;
+    height: 286px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    font-size: 14px;
+    box-shadow: 0 0 10px 5px #e2dfdc;
+    background: #ffffff;
 }
 
-.list-item h3 {
-	padding-left: 15px;
+.link {
+	margin-top: 8px;
+    padding-left: 15px;
+    font-size: 0px;
+    line-height: 13px;
+}
+
+.small-letters {
+	font-size: 14px;
+    text-transform: none;
+}
+
+.big-letters {
+	font-size: 14px;
+	text-transform: uppercase;
 }
 
 .list-item a {
@@ -509,22 +584,29 @@ input[type="radio"]:checked + label::after {
 }
 
 .price-container {
-	vertical-align: top;
-	padding-left: 15px;
+	font-size: 14px;
+    margin-top: 10px;
+    margin-left: 15px;
 }
 
 .price {
-	position: relative;
-	padding: 15px 30px;
-	background-color: #e5e5e5;
+    float: left;
+    width: 110px;
+    height: 33px;
+    padding-top: 9px;
+    text-align: center;
+    background-color: #e5e5e5;
 }
 
 .btn-price {
-    position: absolute;
+    float: left;
     font: inherit;
-    margin-top: -12px;
     width: 78px;
-    padding: 12px;
+    padding-top: 10px;
+    padding-bottom: 9px;
+    padding-left: 7px;
+    padding-right: 6px;
+    text-transform: inherit;
     color: #ffffff;
     background-color: #000000;
     border: none;
@@ -547,13 +629,17 @@ input[type="radio"]:checked + label::after {
 }
 
 .pages {
+    margin-top: -5px;
+    margin-bottom: 5px;
 	font-size: 14px;
-	
 }
 
 .pages-number {
-    padding: 14px 16px;
-    margin-right: 7px;
+    padding-top: 12px;
+    padding-bottom: 13px;
+    padding-left: 18px;
+    padding-right: 19px;
+    margin-right: 4px;
     color: #ffffff;
     text-decoration: none;
     background: #000000;
@@ -572,18 +658,26 @@ input[type="radio"]:checked + label::after {
 }
 
 /*catalog-item*/
+.product-information {
+    margin-top: 5px;
+}
+
 .product-photo {
 	width: 460px;
-	display: inline-block;
-	font-size: 0;
+    display: inline-block;
+    margin-bottom: 8px;
 }
 
 .big-photo 	{
-	margin-bottom: 20px;
+	margin-bottom: 13px;
+    margin-top: 6px;
+    box-shadow: 0 0 10px 5px #e2dfdc;
 }
+
 .mini-photo {
-	margin-right: 20px;
-	font-size: 14px;
+	margin-right: 17px;
+    font-size: 14px;
+    box-shadow: 0 0 10px 5px #e2dfdc;
 }
 
 .mini-photo:last-child {
@@ -596,19 +690,18 @@ input[type="radio"]:checked + label::after {
 }
 
 .short-description {
-	margin-bottom: 65px;
-	margin-left: 10px;
+	margin-bottom: 61px;
+    margin-left: 9px;
+    padding-top: 11px;
 }
 
 .description {
-	position: relative;
     font-size: 14px;
     line-height: 24px;
 }
 
 .article {
-	position: absolute;
-	right: 0;
+    padding-left: 175px;
     color: #aeaeae;
 }
  	
@@ -620,17 +713,34 @@ input[type="radio"]:checked + label::after {
 	color: #000000;
 }
 
+.kit-price .price {
+    float: left;
+    width: 110px;
+    height: 34px;
+    margin-top: 5px;
+    padding-top: 8px;
+    text-align: center;
+    background-color: #e5e5e5;
+}
+
 .kit-price .btn {
-    position: absolute;
+    float: left;
     font: inherit;
-    margin-top: -12px;
     width: 78px;
-    padding: 12px;
+    margin-top: 4px;
+    padding-bottom: 10px;
+    padding-left: 7px;
+    padding-right: 6px;
+    text-transform: inherit;
     color: #ffffff;
     background-color: #000000;
     border: none;
     outline: none;
     cursor: pointer;
+}
+
+.kit-price .btn:hover {
+    background-color: #663d15;
 }
 
 .kit-contents {
@@ -640,6 +750,7 @@ input[type="radio"]:checked + label::after {
 .kit-contents h2 {
 	font-size: 24px;
 	line-height: 30px;
+    padding-bottom: 10px;
 }
 
 .kit-contents ul {
@@ -652,7 +763,7 @@ input[type="radio"]:checked + label::after {
 .kit-contents li {
 	position: relative;
 	padding-left: 20px;
-	padding-bottom: 10px;
+	padding-bottom: 0;
 }
 
 .kit-contents li:before {
@@ -661,17 +772,17 @@ input[type="radio"]:checked + label::after {
     top: 8px;
     left: 0;
     display: block;
-    width: 8px;
-    height: 8px;
+    width: 7px;
+    height: 7px;
     background: #000000;
     transform: rotate(45deg);
 }
 
 /*footer*/
 .main-footer {
-	margin-top: 65px;
-	padding-top: 60px;
-    padding-bottom: 40px;
+	margin-top: 35px;
+	padding-top: 56px;
+    padding-bottom: 45px;
     color: #ffffff; 
     background: #252525 url(../img/pattern-black.jpg);
 	
@@ -680,8 +791,8 @@ input[type="radio"]:checked + label::after {
 .footer-contacts {
     min-height: 90px;
     float: left;
-    width: 320px;
-    margin-right: 60px;
+    width: 318px;
+    margin-right: 63px;
    
 }
 
@@ -720,7 +831,7 @@ input[type="radio"]:checked + label::after {
 }
 
 .social-btn-vk {
-    background-position: -2px -303px;
+    background-position: -1px -303px;
 }
 
 .social-btn-fb {
@@ -751,12 +862,24 @@ input[type="radio"]:checked + label::after {
 
 .footer-copyright p {
     margin: 0;
-    margin-bottom: 15px;
+    margin-right: 4px;
     text-align: center;
 }
 
 .footer-copyright .btn {
-    margin-right: 0;
+    width: 140px;
+    height: 33px;
+    margin-top: 15px;
+    margin-right: -3px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding-top: 9px;
+    padding-left: 1px;
+    color: #ffffff;
+    background-color: #000000;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
 
 .footer-copyright .btn:hover {
